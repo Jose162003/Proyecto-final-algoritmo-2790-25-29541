@@ -79,46 +79,4 @@ INICIO
                         FIN SI
                     HASTA QUE pagoCliente >= totalPagar
 
-                    Imprimir "Venta completada con exito."
-                    Imprimir "Cambio a entregar: Q", (pagoCliente - totalPagar)
-
-                    // Evaluar venta mayor y menor
-                    SI totalVentasDia == 0 ENTONCES
-                        ventaMayor = totalPagar
-                        ventaMenor = totalPagar
-                    SINO
-                        SI totalPagar > ventaMayor ENTONCES
-                            ventaMayor = totalPagar
-                        FIN SI
-                        SI totalPagar < ventaMenor ENTONCES
-                            ventaMenor = totalPagar
-                        FIN SI
-                    FIN SI
-
-                    dineroCaja = dineroCaja + totalPagar
-                    totalVentasDia = totalVentasDia + 1
-                FIN SI
-            FIN CASO 1
-
-            CASO 2:
-                Imprimir ">>> RESUMEN DE OPERACIONES <<<"
-                SI totalVentasDia == 0 ENTONCES
-                    Imprimir "No se han registrado ventas el dia de hoy."
-                SINO
-                    Imprimir "Total de clientes atendidos: ", totalVentasDia
-                    Imprimir "Efectivo total en caja: Q", dineroCaja
-                    Imprimir "Venta mayor registrada: Q", ventaMayor
-                    Imprimir "Venta menor registrada: Q", ventaMenor
-                FIN SI
-            FIN CASO 2
-
-            CASO 3:
-                Imprimir "Cerrando sistema de caja... Hasta luego."
-            FIN CASO 3
-
-            DE OTRO MODO:
-                Imprimir "Error: Opcion no valida. Elija 1, 2 o 3."
-        FIN SEGUN
-
-    HASTA QUE opcion == 3
-FIN
+                    
