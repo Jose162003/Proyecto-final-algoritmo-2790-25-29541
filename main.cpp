@@ -58,13 +58,13 @@ int main() {
                 if (subtotalVenta > 0) {
                     descuento = 0.0;
 
-                    if (subtotalVenta >= 300) {
+                    if (subtotalVenta >= 500) {
                         descuento = subtotalVenta * 0.10;
                     } else if (subtotalVenta >= 100) {
                         descuento = subtotalVenta * 0.05;
                     }
 
-                    impuesto = subtotalVenta * 0.12; 
+                    impuesto = (subtotalVenta - descuento) * 0.12;
                     totalPagar = (subtotalVenta - descuento) + impuesto;
 
                     cout << "\n--- DETALLE DE LA CUENTA ---" << endl;
