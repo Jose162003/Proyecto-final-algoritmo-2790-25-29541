@@ -53,3 +53,9 @@ En esta sección se documenta el correcto funcionamiento del sistema ante difere
 ### Prueba E: Bloqueo por Pago Insuficiente
 > Se valida que el sistema impida finalizar la venta si el monto ingresado como pago por el cliente es menor al total a cobrar.
 [Insertar la imagen del Caso 5 aquí usando el formato: ![Prueba E](foto5.png)]
+>
+## Video de demostración del proyecto
+
+En el siguiente video se presenta el funcionamiento del Sistema de Caja desarrollado en C++, incluyendo la explicación del código y las pruebas realizadas.
+
+**Enlace del video:** https://youtu.be/X8UO1Gn4oXs
